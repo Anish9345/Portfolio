@@ -1,0 +1,139 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('background.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    flex: 1;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style for About Section (Welcome Section) */
+#about {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 15px;
+    width: 70%; /* Match width to Projects and Certificates */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: auto;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#projects, #certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project, .certificate {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 15px;
+    width: 70%; /* Increased size */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-img, .certificate-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Change label color to black */
+form label {
+    color: black;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
